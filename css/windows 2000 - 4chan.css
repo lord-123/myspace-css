@@ -21,13 +21,13 @@ body {
   overflow-x: hidden;
 }
 
-button {
+button, input {
   background: var(--windows-background-colour);
   border: var(--windows-border);
   border-color: var(--windows-border-colour);
 }
 
-button:active {
+button:active, input:active {
   border-color: var(--windows-border-colour-depressed);
 }
 
