@@ -21,6 +21,16 @@ body {
   overflow-x: hidden;
 }
 
+button {
+  background: var(--windows-background-colour);
+  border: var(--windows-border);
+  border-color: var(--windows-border-colour);
+}
+
+button:active {
+  border-color: var(--windows-border-colour-depressed);
+}
+
 .topRight {
   padding: 0;
   --left-margin: calc(-66.66666666% - 34px);
