@@ -21,6 +21,19 @@ body {
   overflow-x: hidden;
 }
 
+html::after {
+  content: "";
+  background: transparent url(http://media-s3-us-east-1.ceros.com/hype-beast/images/2017/10/30/fb2de117e12696697bb40c75c634eaab/patrick-bateman-2.png) no-repeat;
+  background-size: 400px;
+  position: fixed;
+  float: right;
+  display: block;
+  bottom: 0;
+  left: -30px;
+  height: 300px;
+  width: 100%;
+}
+
 button, input {
   background: var(--windows-background-colour);
   border: var(--windows-border);
