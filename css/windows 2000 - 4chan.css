@@ -1,0 +1,341 @@
+/*
+ * MySpace CSS theme copyright© Matthew Abel 2020
+ *              ALL RIGHTS RESERVED
+ */
+
+/* Windows 2000 theming */
+
+:root {
+  --title-gradient: linear-gradient(to right, #0a246a, #97b6d7);
+  --windows-border: 2px outset;
+  --windows-border-colour: #f4f3f1 #3e4b59 #3e4b59 #f4f3f1;
+  --windows-border-colour-depressed: #3e4b59 #f4f3f1 #f4f3f1 #3e4b59;
+  --windows-background-colour: #d4d0c8
+}
+
+body {
+  background: url(https://ia801007.us.archive.org/13/items/theoriginalfilesofsomewindowswallpapers/CB090%23NBA0075.JPG) no-repeat center center fixed;
+  background-size: cover;
+  font-family: Tahoma;
+  padding-top: 0;
+  overflow-x: hidden;
+}
+
+.topRight {
+  padding: 0;
+  --left-margin: calc(-66.66666666% - 34px);
+}
+
+.extended.box {
+  margin-top: 10px;
+}
+
+.topLeft {
+  background: var(--windows-background-colour);
+  border: var(--windows-border);
+  border-color: var(--windows-border-colour);
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.rightHead, .boxInfo .boxHead {
+  background: var(--title-gradient);
+  height: 20px;
+  padding: 3px;
+  padding-bottom: 4px;
+  padding-left: 6px;
+  vertical-align: center;
+  color: white;
+}
+
+.rightHead::after, .boxInfo .boxHead::after {
+  content: "✖";
+  float: right;
+  text-align: center;
+  font-size: 8pt;
+  
+  color: black;
+  font-weight: 700;
+  background:  var(--windows-background-colour);
+  border: var(--windows-border);
+  border-color: var(--windows-border-colour);
+  margin-top: 2px;
+  width: 15px;
+  height: 15px;
+}
+
+.box {
+  background: var(--windows-background-colour);
+  border: var(--windows-border);
+  border-color: var(--windows-border-colour);
+}
+
+.fwiendCounter {
+  padding-left: 4px;
+}
+
+#viewFriends {
+  padding-right: 4px;
+}
+
+.box.fwiends {
+  margin-bottom: 20px;
+}
+
+/* 4chan comments */
+
+/*general*/
+.box.comments {
+  background: #ffe url(https://i.ibb.co/0QTryC2/fade.png) top center repeat-x;
+  position: relative;
+  color: maroon;
+  border-color: maroon;
+  font-size: 10pt;
+  font-family: arial,helvetica,sans-serif;
+  max-width: 1022px;
+  margin-left: var(--left-margin);
+}
+
+.topRight::after {
+  content: url(https://media.giphy.com/media/VUuaORY48e0gg/source.gif);
+  display: block;
+  position: relative;
+  margin-top: 20px;
+  padding: 5px;
+  margin-left: var(--left-margin);
+  margin-bottom: 20px;
+  background: var(--windows-background-colour);
+  border: var(--windows-border);
+  border-color: var(--windows-border-colour);
+  left: 50%;
+  width: 500px;
+  height: 213px;
+}
+
+/* logo */
+.comments .boxHead {
+  background: none;
+}
+
+.comments .boxHead b {
+  display: none;
+}
+
+.comments > .boxHead::before {
+  content: "/mabel/";
+  position: absolute;
+  top: 0;
+  background: none;
+  color: maroon;
+  font-size: 28px;
+  font-family: Tahoma,sans-serif;
+  font-weight: 700;
+  letter-spacing: -2px;
+  top: 15px;
+  left: 25%;
+  width: 50%;
+  text-align: center;
+}
+
+/* login to comment message */
+.box.comments > div:first-of-type
+{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80px;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+/* comment input */
+#form {
+  margin-left: auto;
+  margin-right: auto;
+  border-spacing: 1px;
+  display: table;
+  width: 468px;
+  margin-top: 70px;
+}
+
+#form .boxHead {
+  display: table-cell;
+  background: #ea8;
+  color: #800;
+  font-weight: normal;
+  border: 1px solid #800;
+  padding: 0 5px;
+  position: relative;
+}
+
+#form .boxHead b {
+  display:none;
+}
+
+#form .boxHead::before {
+  content: "Comment";
+  font-size: 10pt;
+  font-weight: 700;
+  position: absolute;
+  top: 50%;
+  padding: 0 5px;
+  letter-spacing: 0;
+}
+
+#form form {
+  display: table-cell;
+  width: 292px;
+  position: relative
+}
+
+#form form input {
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+}
+
+#commentInput {
+  width: 292px;
+  margin-top: 0;
+  border: 1px solid #aaa
+}
+
+/* comments */
+#userWall {
+  border-collapse: collapse;
+  padding-left: 20px;
+  counter-reset: postid 101;
+}
+
+#userWall tr {
+  display: flex;
+  flex-direction: row;
+  margin: 4px 0;
+}
+
+#userWall tbody{
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.tableLeft {
+  background: #f0e0d6;
+  border: 1px solid #d9bfb7;
+  border-left: none;
+  border-top: none;
+  border-right: none;
+  padding :0;
+  padding-top: 10px;
+  width: 100px;
+}
+
+.tableLeft > a > div {
+  text-align: right;
+  padding-left: 10px;
+}
+
+.tableLeft b {
+  color: #117743;
+  font-weight: 700;
+}
+
+.tableLeft img{
+  display: none;
+}
+
+.date {
+  font-weight: normal;
+  padding-left: 5px;
+}
+
+.date::after {
+  counter-increment: postid -1;
+  content: " No." counter(postid);
+}
+
+.tableRight {
+  position: relative;
+  background: #f0e0d6;
+  border: 1px solid #d9bfb7;
+  border-left: none;
+  border-top: none;
+  width: auto;
+}
+
+.tableRight p {
+  padding: 20px;
+  padding-left: 0;
+  margin-left: -60px;
+}
+
+/* footer */
+#footer {
+  margin-bottom: 50px;
+}
+
+/* taskbar */
+#header, #hSub {
+  top: auto !important;
+  bottom: 0 !important;
+  margin: 0 !important;
+  height: 20px !important;
+  position: fixed !important;
+}
+
+#header a, #hSub a {
+  color: black;
+}
+
+#header .logo span {
+  background: url(http://vignette3.wikia.nocookie.net/logopedia/images/4/43/Microsoft_windows_2000_icon.png) 0 0 no-repeat;
+  background-size: 15px 15px;
+  background-position: center left;
+  border: var(--windows-border);
+  border-color: var(--windows-border-colour);
+  font-size: 0;
+  height: 15px; 
+}
+
+#header .logo span:active {
+  border-color: var(--windows-border-colour-depressed);
+}
+
+#header .logo span::after {
+  content: "Start";
+  font-size: 10px;
+  margin-left: 20px;
+  margin-right: 5px
+}
+
+#header {
+  background: var(--windows-background-colour) !important;
+  border-top: var(--windows-border) !important;
+}
+
+#hSub {
+  background: none !important;
+  margin-left: 65px !important;
+  font-size: 0px !important;
+  width: auto !important;
+}
+
+#hUp {
+  margin-top: 0px !important;
+}
+
+#hSub a, #hUp a {
+  display: inline-block;
+  height: 15px !important;
+  font-size: 10px !important;
+  font-weight: 700;
+  vertical-align: center !important;
+  padding: 0 2px 0 2px;
+  border: var(--windows-border);
+  border-color: var(--windows-border-colour);
+  margin: 0 !important;
+  margin-right: 8px !important;
+  color: black !important;
+}
+
+#hSub a:active, #hUp a:active {
+  border-color: var(--windows-border-colour-depressed);
+}
