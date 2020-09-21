@@ -248,7 +248,7 @@ button:active, input:active {
   border-right: none;
   padding :0;
   padding-top: 10px;
-  width: 100px;
+  width: auto;
 }
 
 .tableLeft > a > div {
@@ -267,7 +267,6 @@ button:active, input:active {
 
 .date {
   font-weight: normal;
-  padding-left: 5px;
 }
 
 .date::after {
@@ -276,7 +275,6 @@ button:active, input:active {
 }
 
 .tableRight {
-  position: relative;
   background: #f0e0d6;
   border: 1px solid #d9bfb7;
   border-left: none;
@@ -287,7 +285,6 @@ button:active, input:active {
 .tableRight p {
   padding: 20px;
   padding-left: 0;
-  margin-left: -60px;
 }
 
 /* footer */
