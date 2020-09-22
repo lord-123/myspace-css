@@ -119,6 +119,10 @@ button:active, input:active {
   margin-left: var(--left-margin);
 }
 
+.box.comments:last-child {
+  padding: 5px;
+}
+
 .topRight::after {
   content: url(https://media.giphy.com/media/VUuaORY48e0gg/source.gif);
   display: block;
