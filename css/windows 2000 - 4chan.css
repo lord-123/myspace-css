@@ -252,7 +252,6 @@ button:active, input:active {
   border-right: none;
   padding :0;
   padding-top: 10px;
-  width: auto;
 }
 
 .tableLeft > a > div {
@@ -286,8 +285,12 @@ button:active, input:active {
   width: auto;
 }
 
+.tableRight div:nth-child(2) {
+  padding-top:20px;
+}
+
 .tableRight p {
-  padding: 20px;
+  padding: 5px;
   padding-left: 0;
 }
 
