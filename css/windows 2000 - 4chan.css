@@ -252,6 +252,7 @@ button:active, input:active {
   border-right: none;
   padding :0;
   padding-top: 10px;
+  width: auto
 }
 
 .tableLeft > a > div {
@@ -287,6 +288,16 @@ button:active, input:active {
 
 .tableRight div:nth-child(2) {
   padding-top:20px;
+}
+
+.tableRight img {
+  max-width: 200px !important;
+  max-height: 200px !important;
+}
+
+.tableRight img:active {
+  max-width: 100% !important;
+  max-height: 100% !important;
 }
 
 .tableRight p {
